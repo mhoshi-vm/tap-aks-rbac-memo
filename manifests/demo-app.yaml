@@ -1,0 +1,15 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: py-simple
+    apps.tanzu.vmware.com/workload-type: web
+  name: py-simple
+  namespace: tap-dev01
+spec:
+  source:
+    git:
+      ref:
+        branch: main
+      url: https://github.com/mhoshi-vm/tap-python-recipies
+    subPath: python-simple/

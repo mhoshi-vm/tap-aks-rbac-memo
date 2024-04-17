@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    apps.tanzu.vmware.com/tap-managed-ns: ""
+  labels:
+    apps.tanzu.vmware.com/tap-ns: dev
+  name: tap-dev01
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    apps.tanzu.vmware.com/tap-managed-ns: ""
+  labels:
+    apps.tanzu.vmware.com/tap-ns: dev
+  name: tap-dev02
